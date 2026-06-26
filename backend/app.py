@@ -1,8 +1,9 @@
 from graph.workflow import graph
 
+
 state = {
     "customer_name": "David",
-    "query": "I forgot my account password.",
+    "query": "What was my previous support issue?",
     "intent": "",
     "department": "",
     "retrieved_docs": [],
@@ -10,7 +11,7 @@ state = {
     "requires_approval": False,
     "approved": False,
     "final_response": "",
-    "conversation_history": [],
+    "conversation_history": []
 }
 
 result = graph.invoke(state)
